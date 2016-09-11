@@ -17,6 +17,8 @@
 		B5D75E481D8240F90011AF10 /* MaintableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E471D8240F90011AF10 /* MaintableCellModel.m */; };
 		B5D75E4B1D82411F0011AF10 /* MaintbaleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E4A1D82411F0011AF10 /* MaintbaleViewCell.m */; };
 		B5D75E4F1D82494C0011AF10 /* BoardLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E4E1D82494C0011AF10 /* BoardLayerVC.m */; };
+		B5EF84001D84E31F0082D694 /* VisionEffectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EF83FF1D84E31F0082D694 /* VisionEffectionVC.m */; };
+		B5EF84031D8500120082D694 /* TransformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EF84021D8500120082D694 /* TransformationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		B5D75E4A1D82411F0011AF10 /* MaintbaleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaintbaleViewCell.m; sourceTree = "<group>"; };
 		B5D75E4D1D82494C0011AF10 /* BoardLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardLayerVC.h; sourceTree = "<group>"; };
 		B5D75E4E1D82494C0011AF10 /* BoardLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardLayerVC.m; sourceTree = "<group>"; };
+		B5EF83FE1D84E31F0082D694 /* VisionEffectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionEffectionVC.h; sourceTree = "<group>"; };
+		B5EF83FF1D84E31F0082D694 /* VisionEffectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionEffectionVC.m; sourceTree = "<group>"; };
+		B5EF84011D8500120082D694 /* TransformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationVC.h; sourceTree = "<group>"; };
+		B5EF84021D8500120082D694 /* TransformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 				B5D75E4E1D82494C0011AF10 /* BoardLayerVC.m */,
 				B569EC521D83A6BF001273C4 /* LayerGeometryVC.h */,
 				B569EC531D83A6BF001273C4 /* LayerGeometryVC.m */,
+				B5EF83FE1D84E31F0082D694 /* VisionEffectionVC.h */,
+				B5EF83FF1D84E31F0082D694 /* VisionEffectionVC.m */,
+				B5EF84011D8500120082D694 /* TransformationVC.h */,
+				B5EF84021D8500120082D694 /* TransformationVC.m */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -179,8 +189,10 @@
 			files = (
 				B569EC541D83A6BF001273C4 /* LayerGeometryVC.m in Sources */,
 				B5D75E451D823F590011AF10 /* MaintableViewController.m in Sources */,
+				B5EF84001D84E31F0082D694 /* VisionEffectionVC.m in Sources */,
 				B5D75E481D8240F90011AF10 /* MaintableCellModel.m in Sources */,
 				B5D75E2E1D823E470011AF10 /* AppDelegate.m in Sources */,
+				B5EF84031D8500120082D694 /* TransformationVC.m in Sources */,
 				B5D75E2B1D823E470011AF10 /* main.m in Sources */,
 				B5D75E4B1D82411F0011AF10 /* MaintbaleViewCell.m in Sources */,
 				B5D75E4F1D82494C0011AF10 /* BoardLayerVC.m in Sources */,

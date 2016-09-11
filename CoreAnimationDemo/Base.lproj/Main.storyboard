@@ -47,11 +47,132 @@
                     <connections>
                         <segue destination="sqO-tM-Unx" kind="push" identifier="BoardLayerSegue" id="Mio-1J-dse"/>
                         <segue destination="yBK-O4-Eda" kind="push" identifier="LayerGeometrySegue" id="fVf-CK-H5B"/>
+                        <segue destination="vjz-7g-44R" kind="push" identifier="VisionEffectionSegue" id="gRk-ap-M60"/>
+                        <segue destination="LlO-PS-p04" kind="push" identifier="TransformationSegue" id="Vp3-al-L3E"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5R-WJ-aoj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-379" y="141"/>
+        </scene>
+        <!--TransformationVC-->
+        <scene sceneID="qsB-98-AA7">
+            <objects>
+                <viewController id="LlO-PS-p04" customClass="TransformationVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N36-0B-cmQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="quk-bh-8iq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fmL-uL-9uK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYM-19-Ilc">
+                                <rect key="frame" x="243" y="461" width="68" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.88858537319999997" blue="0.13938530599999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="5Le-wO-ewc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="sBu-i4-zJx"/>
+                                </constraints>
+                                <state key="normal" title="变换"/>
+                                <connections>
+                                    <action selector="change:" destination="LlO-PS-p04" eventType="touchUpInside" id="cqX-Xa-9FA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maW-GT-2IK">
+                                <rect key="frame" x="243" y="506" width="68" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2249244329" blue="0.29620079939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Pfr-aC-6lD"/>
+                                </constraints>
+                                <state key="normal" title="3D变换"/>
+                                <connections>
+                                    <action selector="change3DBtn:" destination="LlO-PS-p04" eventType="touchUpInside" id="eYw-CV-HB2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uH5-3G-F0Y">
+                                <rect key="frame" x="309" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB6-Xi-sRy">
+                                <rect key="frame" x="243" y="416" width="68" height="30"/>
+                                <color key="backgroundColor" red="0.84969732850000002" green="0.18179295379999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="立方体"/>
+                                <connections>
+                                    <action selector="CubeClick:" destination="LlO-PS-p04" eventType="touchUpInside" id="VOe-vp-Q6J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="maW-GT-2IK" firstAttribute="top" secondItem="gYM-19-Ilc" secondAttribute="bottom" constant="10" id="22p-0H-UeN"/>
+                            <constraint firstItem="wB6-Xi-sRy" firstAttribute="leading" secondItem="gYM-19-Ilc" secondAttribute="leading" id="2Y2-Q8-IbM"/>
+                            <constraint firstItem="wB6-Xi-sRy" firstAttribute="centerY" secondItem="fmL-uL-9uK" secondAttribute="centerY" id="3Qn-CW-bSD"/>
+                            <constraint firstItem="uH5-3G-F0Y" firstAttribute="centerX" secondItem="fmL-uL-9uK" secondAttribute="centerX" id="7jK-xd-VVM"/>
+                            <constraint firstItem="wB6-Xi-sRy" firstAttribute="centerX" secondItem="fmL-uL-9uK" secondAttribute="centerX" id="9aO-Us-oJR"/>
+                            <constraint firstItem="maW-GT-2IK" firstAttribute="centerY" secondItem="gYM-19-Ilc" secondAttribute="centerY" id="EqF-QB-lP3"/>
+                            <constraint firstItem="gYM-19-Ilc" firstAttribute="centerX" secondItem="fmL-uL-9uK" secondAttribute="centerX" id="MjO-sx-IEK"/>
+                            <constraint firstItem="uH5-3G-F0Y" firstAttribute="centerY" secondItem="fmL-uL-9uK" secondAttribute="centerY" id="VU0-MM-EMV"/>
+                            <constraint firstItem="maW-GT-2IK" firstAttribute="centerX" secondItem="gYM-19-Ilc" secondAttribute="centerX" id="XUe-Ba-9VM"/>
+                            <constraint firstItem="wB6-Xi-sRy" firstAttribute="height" secondItem="gYM-19-Ilc" secondAttribute="height" id="abH-K1-k4C"/>
+                            <constraint firstItem="wB6-Xi-sRy" firstAttribute="trailing" secondItem="gYM-19-Ilc" secondAttribute="trailing" id="ahi-bf-vQc"/>
+                            <constraint firstItem="quk-bh-8iq" firstAttribute="top" secondItem="gYM-19-Ilc" secondAttribute="bottom" constant="60" id="bOC-S8-cmR"/>
+                            <constraint firstItem="wB6-Xi-sRy" firstAttribute="width" secondItem="gYM-19-Ilc" secondAttribute="width" id="dA4-QF-fNa"/>
+                            <constraint firstItem="uH5-3G-F0Y" firstAttribute="height" secondItem="fmL-uL-9uK" secondAttribute="height" id="eEV-Pb-C5M"/>
+                            <constraint firstItem="gYM-19-Ilc" firstAttribute="top" secondItem="wB6-Xi-sRy" secondAttribute="bottom" constant="15" id="gZ5-KE-S3e"/>
+                            <constraint firstItem="uH5-3G-F0Y" firstAttribute="width" secondItem="fmL-uL-9uK" secondAttribute="width" id="iLq-Es-Vnw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Qn-CW-bSD"/>
+                                <exclude reference="9aO-Us-oJR"/>
+                                <exclude reference="ahi-bf-vQc"/>
+                                <exclude reference="EqF-QB-lP3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="cBV-9h-U3A"/>
+                    <connections>
+                        <outlet property="change3DBtn" destination="maW-GT-2IK" id="8bn-IB-vLL"/>
+                        <outlet property="changeBtn" destination="gYM-19-Ilc" id="uQc-bw-022"/>
+                        <outlet property="cubeBtn" destination="wB6-Xi-sRy" id="VzJ-pu-qcy"/>
+                        <outlet property="playGroundView" destination="uH5-3G-F0Y" id="umI-uK-F1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jF-DB-2S3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="1148"/>
+        </scene>
+        <!--Vision EffectionVC-->
+        <scene sceneID="0xx-Gw-Rhb">
+            <objects>
+                <viewController id="vjz-7g-44R" customClass="VisionEffectionVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vb3-Cx-uTr"/>
+                        <viewControllerLayoutGuide type="bottom" id="D3p-7E-WAZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gWY-42-Thi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="表盘" translatesAutoresizingMaskIntoConstraints="NO" id="GSn-8k-Fys">
+                                <rect key="frame" x="217" y="202" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GSn-8k-Fys" firstAttribute="centerX" secondItem="gWY-42-Thi" secondAttribute="centerX" id="Dbj-g3-bhW"/>
+                            <constraint firstItem="GSn-8k-Fys" firstAttribute="centerY" secondItem="gWY-42-Thi" secondAttribute="centerY" id="OPB-OO-Gmt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ULe-3L-wZV"/>
+                    <connections>
+                        <outlet property="imageView" destination="GSn-8k-Fys" id="Ew3-f8-reb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGt-2Z-6QN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="1132"/>
         </scene>
         <!--Board LayerVC-->
         <scene sceneID="jX0-1D-4Xa">
@@ -70,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aae-6i-y0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423" y="141"/>
+            <point key="canvasLocation" x="327" y="-281"/>
         </scene>
         <!--Layer GeometryVC-->
         <scene sceneID="dgf-vH-jGZ">
@@ -138,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUr-po-P5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="762"/>
+            <point key="canvasLocation" x="339" y="366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ioF-VJ-MpH">

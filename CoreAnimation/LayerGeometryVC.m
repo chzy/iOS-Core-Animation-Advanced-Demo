@@ -31,7 +31,7 @@
     // self.secondImV.layer.delegate = self;()
     // - (void)layoutSublayersOfLayer:(CALayer *)layer;
     //   当图层的`bounds`发生改变，或者图层的`-setNeedsLayout`方法被调用的时候，这个函数将会被执行。这使得你可以手动地重新摆放或者重新调整子图层的大小，但是不能像`UIView`的`autoresizingMask`和`constraints`属性做到自适应屏幕旋转。
-    
+    [self working];
 }
 - (void)working{
     NSCalendar *calender = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
