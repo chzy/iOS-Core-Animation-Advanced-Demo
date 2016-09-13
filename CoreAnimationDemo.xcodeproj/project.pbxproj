@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B569EC541D83A6BF001273C4 /* LayerGeometryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B569EC531D83A6BF001273C4 /* LayerGeometryVC.m */; };
+		B59E031C1D8540CF0012F1D0 /* ProprietaryLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E031B1D8540CF0012F1D0 /* ProprietaryLayerVC.m */; };
+		B5D27BDE1D87841E0030F349 /* 图片2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B5D27BDD1D87841E0030F349 /* 图片2.jpeg */; };
+		B5D27BE31D87DDA60030F349 /* GAEGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D27BE21D87DDA60030F349 /* GAEGLLayer.m */; };
+		B5D27BEF1D87F8440030F349 /* local.mov in Resources */ = {isa = PBXBuildFile; fileRef = B5D27BEE1D87F8440030F349 /* local.mov */; };
 		B5D75E2B1D823E470011AF10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E2A1D823E470011AF10 /* main.m */; };
 		B5D75E2E1D823E470011AF10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E2D1D823E470011AF10 /* AppDelegate.m */; };
 		B5D75E341D823E470011AF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D75E321D823E470011AF10 /* Main.storyboard */; };
@@ -24,6 +28,12 @@
 /* Begin PBXFileReference section */
 		B569EC521D83A6BF001273C4 /* LayerGeometryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerGeometryVC.h; sourceTree = "<group>"; };
 		B569EC531D83A6BF001273C4 /* LayerGeometryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerGeometryVC.m; sourceTree = "<group>"; };
+		B59E031A1D8540CF0012F1D0 /* ProprietaryLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProprietaryLayerVC.h; sourceTree = "<group>"; };
+		B59E031B1D8540CF0012F1D0 /* ProprietaryLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProprietaryLayerVC.m; sourceTree = "<group>"; };
+		B5D27BDD1D87841E0030F349 /* 图片2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "图片2.jpeg"; sourceTree = "<group>"; };
+		B5D27BE11D87DDA60030F349 /* GAEGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAEGLLayer.h; sourceTree = "<group>"; };
+		B5D27BE21D87DDA60030F349 /* GAEGLLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAEGLLayer.m; sourceTree = "<group>"; };
+		B5D27BEE1D87F8440030F349 /* local.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = local.mov; sourceTree = "<group>"; };
 		B5D75E261D823E470011AF10 /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D75E2A1D823E470011AF10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5D75E2C1D823E470011AF10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5D27BDC1D8783F40030F349 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5D27BEE1D87F8440030F349 /* local.mov */,
+				B5D27BDD1D87841E0030F349 /* 图片2.jpeg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		B5D75E1D1D823E470011AF10 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +96,7 @@
 		B5D75E281D823E470011AF10 /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B5D27BDC1D8783F40030F349 /* resources */,
 				B5D75E2C1D823E470011AF10 /* AppDelegate.h */,
 				B5D75E2D1D823E470011AF10 /* AppDelegate.m */,
 				B5D75E321D823E470011AF10 /* Main.storyboard */,
@@ -113,6 +133,10 @@
 				B5EF83FF1D84E31F0082D694 /* VisionEffectionVC.m */,
 				B5EF84011D8500120082D694 /* TransformationVC.h */,
 				B5EF84021D8500120082D694 /* TransformationVC.m */,
+				B59E031A1D8540CF0012F1D0 /* ProprietaryLayerVC.h */,
+				B59E031B1D8540CF0012F1D0 /* ProprietaryLayerVC.m */,
+				B5D27BE11D87DDA60030F349 /* GAEGLLayer.h */,
+				B5D27BE21D87DDA60030F349 /* GAEGLLayer.m */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -177,6 +201,8 @@
 				B5D75E391D823E470011AF10 /* LaunchScreen.storyboard in Resources */,
 				B5D75E361D823E470011AF10 /* Assets.xcassets in Resources */,
 				B5D75E341D823E470011AF10 /* Main.storyboard in Resources */,
+				B5D27BEF1D87F8440030F349 /* local.mov in Resources */,
+				B5D27BDE1D87841E0030F349 /* 图片2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,10 +216,12 @@
 				B569EC541D83A6BF001273C4 /* LayerGeometryVC.m in Sources */,
 				B5D75E451D823F590011AF10 /* MaintableViewController.m in Sources */,
 				B5EF84001D84E31F0082D694 /* VisionEffectionVC.m in Sources */,
+				B59E031C1D8540CF0012F1D0 /* ProprietaryLayerVC.m in Sources */,
 				B5D75E481D8240F90011AF10 /* MaintableCellModel.m in Sources */,
 				B5D75E2E1D823E470011AF10 /* AppDelegate.m in Sources */,
 				B5EF84031D8500120082D694 /* TransformationVC.m in Sources */,
 				B5D75E2B1D823E470011AF10 /* main.m in Sources */,
+				B5D27BE31D87DDA60030F349 /* GAEGLLayer.m in Sources */,
 				B5D75E4B1D82411F0011AF10 /* MaintbaleViewCell.m in Sources */,
 				B5D75E4F1D82494C0011AF10 /* BoardLayerVC.m in Sources */,
 			);

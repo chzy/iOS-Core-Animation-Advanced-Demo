@@ -23,6 +23,7 @@
     [self.dataSource addObject:[self setModelBy:@"图层几何学" andVCName:@"LayerGeometryVC"]];
     [self.dataSource addObject:[self setModelBy:@"视觉效果" andVCName:@"VisionEffectionVC"]];
     [self.dataSource addObject:[self setModelBy:@"变换" andVCName:@"TransformationVC"]];
+    [self.dataSource addObject:[self setModelBy:@"专有图层" andVCName:@"ProprietaryLayerVC"]];
     [self.tableView reloadData];
 }
 - (MaintableCellModel *)setModelBy:(NSString *)aString andVCName:(NSString *)aClassName{
@@ -62,7 +63,9 @@
     if ([model.vCStr isEqualToString:@"TransformationVC"]) {
         [self performSegueWithIdentifier:@"TransformationSegue" sender:self];
     }
-    
+    if ([model.vCStr isEqualToString:@"ProprietaryLayerVC"]) {
+        [self performSegueWithIdentifier:@"ProprietaryLayerSegue" sender:self];
+    }
 //    [self.navigationController pushViewController:VC animated:YES];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -79,5 +82,12 @@
     if ([segue.identifier isEqualToString:@"TransformationSegue"]) {
         segue.destinationViewController.title = @"变换";
     }
+    if ([segue.identifier isEqualToString:@"ProprietaryLayerSegue"]) {
+        segue.destinationViewController.title = @"专有涂层";
+    }
+}
++(void)load{
+    [super load];
+    
 }
 @end

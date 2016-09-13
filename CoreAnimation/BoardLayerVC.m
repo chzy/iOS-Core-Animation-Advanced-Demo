@@ -23,7 +23,6 @@
      *  对其方式 与 view中的 contentMode类似
      */
       self.view.layer.contentsGravity = kCAGravityResizeAspect;
-    
     /**
      *  
      当 self.view.layer.contentsGravity 不是
@@ -58,7 +57,6 @@
      */
     
     
-    
-    
 }
+
 @end
