@@ -24,6 +24,11 @@
     [self.dataSource addObject:[self setModelBy:@"视觉效果" andVCName:@"VisionEffectionVC"]];
     [self.dataSource addObject:[self setModelBy:@"变换" andVCName:@"TransformationVC"]];
     [self.dataSource addObject:[self setModelBy:@"专有图层" andVCName:@"ProprietaryLayerVC"]];
+    [self.dataSource addObject:[self setModelBy:@"隐式动画" andVCName:@"InvisibilityAnimationVC"]];
+    [self.dataSource addObject:[self setModelBy:@"显式动画" andVCName:@"VisibilityAnimationVC"]];
+    [self.dataSource addObject:[self setModelBy:@"图层时间" andVCName:@"AnimationTimeVC"]];
+    [self.dataSource addObject:[self setModelBy:@"缓冲" andVCName:@"BufferVC"]];
+    
     [self.tableView reloadData];
 }
 - (MaintableCellModel *)setModelBy:(NSString *)aString andVCName:(NSString *)aClassName{
@@ -66,6 +71,19 @@
     if ([model.vCStr isEqualToString:@"ProprietaryLayerVC"]) {
         [self performSegueWithIdentifier:@"ProprietaryLayerSegue" sender:self];
     }
+    if ([model.vCStr isEqualToString:@"InvisibilityAnimationVC"]) {
+        [self performSegueWithIdentifier:@"InvisibilityAnimationSegue" sender:self];
+    }
+    if ([model.vCStr isEqualToString:@"VisibilityAnimationVC"]) {
+        [self performSegueWithIdentifier:@"VisibilityAnimationSegue" sender:self];
+    }
+    if ([model.vCStr isEqualToString:@"AnimationTimeVC"]) {
+        [self performSegueWithIdentifier:@"AnimationTimeSegue" sender:self];
+    }
+    if ([model.vCStr isEqualToString:@"BufferVC"]) {
+        [self performSegueWithIdentifier:@"BufferSegue" sender:self];
+    }
+    
 //    [self.navigationController pushViewController:VC animated:YES];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -84,6 +102,18 @@
     }
     if ([segue.identifier isEqualToString:@"ProprietaryLayerSegue"]) {
         segue.destinationViewController.title = @"专有涂层";
+    }
+    if ([segue.identifier isEqualToString:@"InvisibilityAnimationSegue"]) {
+        segue.destinationViewController.title = @"隐式动画";
+    }
+    if ([segue.identifier isEqualToString:@"VisibilityAnimationSegue"]) {
+        segue.destinationViewController.title = @"显式动画";
+    }
+    if ([segue.identifier isEqualToString:@"AnimationTimeSegue"]) {
+        segue.destinationViewController.title = @"图层时间";
+    }
+    if ([segue.identifier isEqualToString:@"BufferSegue"]) {
+        segue.destinationViewController.title = @"缓冲";
     }
 }
 +(void)load{

@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B532273A1D8FE12C00209EF9 /* GroupAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B53227391D8FE12C00209EF9 /* GroupAnimationVC.m */; };
+		B53469B91D93A685009EA9BE /* AnimationTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B53469B81D93A685009EA9BE /* AnimationTimeVC.m */; };
+		B53469BB1D93B148009EA9BE /* door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B53469BA1D93B148009EA9BE /* door.jpg */; };
 		B569EC541D83A6BF001273C4 /* LayerGeometryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B569EC531D83A6BF001273C4 /* LayerGeometryVC.m */; };
+		B5909C041D8F6BC400839FB1 /* VisibilityAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5909C031D8F6BC400839FB1 /* VisibilityAnimationVC.m */; };
 		B59E031C1D8540CF0012F1D0 /* ProprietaryLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E031B1D8540CF0012F1D0 /* ProprietaryLayerVC.m */; };
+		B5BBB6C01D94D7B100AA67CA /* BufferVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BBB6BF1D94D7B100AA67CA /* BufferVC.m */; };
 		B5D27BDE1D87841E0030F349 /* 图片2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B5D27BDD1D87841E0030F349 /* 图片2.jpeg */; };
 		B5D27BE31D87DDA60030F349 /* GAEGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D27BE21D87DDA60030F349 /* GAEGLLayer.m */; };
 		B5D27BEF1D87F8440030F349 /* local.mov in Resources */ = {isa = PBXBuildFile; fileRef = B5D27BEE1D87F8440030F349 /* local.mov */; };
+		B5D27BF21D87FB680030F349 /* InvisibilityAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D27BF11D87FB680030F349 /* InvisibilityAnimationVC.m */; };
 		B5D75E2B1D823E470011AF10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E2A1D823E470011AF10 /* main.m */; };
 		B5D75E2E1D823E470011AF10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D75E2D1D823E470011AF10 /* AppDelegate.m */; };
 		B5D75E341D823E470011AF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D75E321D823E470011AF10 /* Main.storyboard */; };
@@ -26,14 +32,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53227381D8FE12C00209EF9 /* GroupAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAnimationVC.h; sourceTree = "<group>"; };
+		B53227391D8FE12C00209EF9 /* GroupAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationVC.m; sourceTree = "<group>"; };
+		B53469B71D93A685009EA9BE /* AnimationTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTimeVC.h; sourceTree = "<group>"; };
+		B53469B81D93A685009EA9BE /* AnimationTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTimeVC.m; sourceTree = "<group>"; };
+		B53469BA1D93B148009EA9BE /* door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = door.jpg; sourceTree = "<group>"; };
 		B569EC521D83A6BF001273C4 /* LayerGeometryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerGeometryVC.h; sourceTree = "<group>"; };
 		B569EC531D83A6BF001273C4 /* LayerGeometryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerGeometryVC.m; sourceTree = "<group>"; };
+		B5909C021D8F6BC400839FB1 /* VisibilityAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibilityAnimationVC.h; sourceTree = "<group>"; };
+		B5909C031D8F6BC400839FB1 /* VisibilityAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisibilityAnimationVC.m; sourceTree = "<group>"; };
 		B59E031A1D8540CF0012F1D0 /* ProprietaryLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProprietaryLayerVC.h; sourceTree = "<group>"; };
 		B59E031B1D8540CF0012F1D0 /* ProprietaryLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProprietaryLayerVC.m; sourceTree = "<group>"; };
+		B5BBB6BE1D94D7B100AA67CA /* BufferVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferVC.h; sourceTree = "<group>"; };
+		B5BBB6BF1D94D7B100AA67CA /* BufferVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BufferVC.m; sourceTree = "<group>"; };
 		B5D27BDD1D87841E0030F349 /* 图片2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "图片2.jpeg"; sourceTree = "<group>"; };
 		B5D27BE11D87DDA60030F349 /* GAEGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAEGLLayer.h; sourceTree = "<group>"; };
 		B5D27BE21D87DDA60030F349 /* GAEGLLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAEGLLayer.m; sourceTree = "<group>"; };
 		B5D27BEE1D87F8440030F349 /* local.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = local.mov; sourceTree = "<group>"; };
+		B5D27BF01D87FB680030F349 /* InvisibilityAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvisibilityAnimationVC.h; sourceTree = "<group>"; };
+		B5D27BF11D87FB680030F349 /* InvisibilityAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvisibilityAnimationVC.m; sourceTree = "<group>"; };
 		B5D75E261D823E470011AF10 /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D75E2A1D823E470011AF10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5D75E2C1D823E470011AF10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +87,7 @@
 		B5D27BDC1D8783F40030F349 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				B53469BA1D93B148009EA9BE /* door.jpg */,
 				B5D27BEE1D87F8440030F349 /* local.mov */,
 				B5D27BDD1D87841E0030F349 /* 图片2.jpeg */,
 			);
@@ -137,6 +155,16 @@
 				B59E031B1D8540CF0012F1D0 /* ProprietaryLayerVC.m */,
 				B5D27BE11D87DDA60030F349 /* GAEGLLayer.h */,
 				B5D27BE21D87DDA60030F349 /* GAEGLLayer.m */,
+				B5D27BF01D87FB680030F349 /* InvisibilityAnimationVC.h */,
+				B5D27BF11D87FB680030F349 /* InvisibilityAnimationVC.m */,
+				B5909C021D8F6BC400839FB1 /* VisibilityAnimationVC.h */,
+				B5909C031D8F6BC400839FB1 /* VisibilityAnimationVC.m */,
+				B53227381D8FE12C00209EF9 /* GroupAnimationVC.h */,
+				B53227391D8FE12C00209EF9 /* GroupAnimationVC.m */,
+				B53469B71D93A685009EA9BE /* AnimationTimeVC.h */,
+				B53469B81D93A685009EA9BE /* AnimationTimeVC.m */,
+				B5BBB6BE1D94D7B100AA67CA /* BufferVC.h */,
+				B5BBB6BF1D94D7B100AA67CA /* BufferVC.m */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -172,6 +200,8 @@
 				TargetAttributes = {
 					B5D75E251D823E470011AF10 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 49S32J7447;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -199,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D75E391D823E470011AF10 /* LaunchScreen.storyboard in Resources */,
+				B53469BB1D93B148009EA9BE /* door.jpg in Resources */,
 				B5D75E361D823E470011AF10 /* Assets.xcassets in Resources */,
 				B5D75E341D823E470011AF10 /* Main.storyboard in Resources */,
 				B5D27BEF1D87F8440030F349 /* local.mov in Resources */,
@@ -213,10 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5909C041D8F6BC400839FB1 /* VisibilityAnimationVC.m in Sources */,
+				B532273A1D8FE12C00209EF9 /* GroupAnimationVC.m in Sources */,
+				B5D27BF21D87FB680030F349 /* InvisibilityAnimationVC.m in Sources */,
+				B53469B91D93A685009EA9BE /* AnimationTimeVC.m in Sources */,
 				B569EC541D83A6BF001273C4 /* LayerGeometryVC.m in Sources */,
 				B5D75E451D823F590011AF10 /* MaintableViewController.m in Sources */,
 				B5EF84001D84E31F0082D694 /* VisionEffectionVC.m in Sources */,
 				B59E031C1D8540CF0012F1D0 /* ProprietaryLayerVC.m in Sources */,
+				B5BBB6C01D94D7B100AA67CA /* BufferVC.m in Sources */,
 				B5D75E481D8240F90011AF10 /* MaintableCellModel.m in Sources */,
 				B5D75E2E1D823E470011AF10 /* AppDelegate.m in Sources */,
 				B5EF84031D8500120082D694 /* TransformationVC.m in Sources */,
@@ -335,9 +371,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 49S32J7447;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chzy.CoreAnimationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = coreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -346,9 +385,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 49S32J7447;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chzy.CoreAnimationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = coreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
